@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rectangle Game</title>
+</head>
+
+<body>
+
+<h3>Rectangle Game</h3>
+
+<div id="box" style="width:150px;height:150px;border:1px solid black;"></div>
+
+<br>
+
+<button onclick="circle()">Circle</button>
+<button onclick="hide()">Hide</button>
+<button onclick="show()">Show</button>
+
+<script>
+
+let box = document.getElementById("box");
+
+function circle() {
+  box.style.borderRadius = "50%";
+}
+
+function hide() {
+  box.style.display = "none";
+}
+
+function show() {
+  box.style.display = "block";
+}
+
+box.onmouseover = function() {
+  box.style.background = "red";
+}
+
+box.onmouseout = function() {
+  box.style.background = "";
+}
+
+</script>
+
+</body>
+</html>
